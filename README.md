@@ -7,6 +7,8 @@ Aproximação de pontos por funções lineares e quadráticas pelo R
 pesos44=read.csv("G:/pesos44.txt", sep = ";")
 plot(pesos44)
 ```
+![1](https://user-images.githubusercontent.com/50224653/71490485-c5688700-2809-11ea-90b9-337d65a99232.png)
+
 ## Gerando a função linear
 ```R
 a=length(pesos44[,1])
@@ -28,6 +30,7 @@ x_ajuste <- seq(min(pesos44[,1]), max(pesos44[,1]), by=0.01)
 y_ajuste <--60.06608  +70.33368*(x_ajuste)
 points(x_ajuste, y_ajuste, type="l",col="red",lwd = 3)
 ```
+![2](https://user-images.githubusercontent.com/50224653/71490482-c4cff080-2809-11ea-92a9-62d7a13a3dc1.png)
 
 # Aproximação Quadrática
 ## Obentdo os dados e fazendo uma visualização dos mesmos
@@ -35,6 +38,8 @@ points(x_ajuste, y_ajuste, type="l",col="red",lwd = 3)
 barco2=read.csv("G:/barco2.txt", sep = ";")
 plot(barco2)
 ```
+![3](https://user-images.githubusercontent.com/50224653/71490483-c5688700-2809-11ea-8f1f-5573e8fe0267.png)
+
 ## Gerando a função quadrática
 ```R
 n=3 ;M=matrix(nrow=n,ncol=n)  #numero de graus da linha (n-1)
@@ -56,3 +61,5 @@ x_ajuste <- seq(min(barco2[,1]), max(barco2[,1]), by=0.01)
 y_ajuste <- 376.517810 -75.988612*(x_ajuste)   +3.869957*(x_ajuste)^2
 points(x_ajuste, y_ajuste, type="l",col="red",lwd = 3)
 ```
+![4](https://user-images.githubusercontent.com/50224653/71490484-c5688700-2809-11ea-9f3f-7227b256e231.png)
+
