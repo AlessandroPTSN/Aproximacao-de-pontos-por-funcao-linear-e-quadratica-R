@@ -2,7 +2,7 @@
 Aproximação de pontos por funções lineares e quadráticas pelo R
 
 # Aproximação Linear
-## Obentdo os dados e fazendo uma visualização dos mesmos
+## Obtendo os dados e fazendo uma visualização dos mesmos
 ```R
 pesos44=read.csv("G:/pesos44.txt", sep = ";")
 plot(pesos44)
@@ -33,7 +33,7 @@ points(x_ajuste, y_ajuste, type="l",col="red",lwd = 3)
 ![2](https://user-images.githubusercontent.com/50224653/71490482-c4cff080-2809-11ea-92a9-62d7a13a3dc1.png)
 
 # Aproximação Quadrática
-## Obentdo os dados e fazendo uma visualização dos mesmos
+## Obtendo os dados e fazendo uma visualização dos mesmos
 ```R
 barco2=read.csv("G:/barco2.txt", sep = ";")
 plot(barco2)
